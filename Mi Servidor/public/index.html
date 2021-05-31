@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+	<script src="js/sensojito.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.8/push.min.js" 
+	integrity="sha512-eiqtDDb4GUVCSqOSOTz/s/eiU4B31GrdSb17aPAA4Lv/Cjc8o+hnDvuNkgXhSI5yHuDvYkuojMaQmrB5JB31XQ==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<title>Sensojito App</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
+</head>
+<body>
+	<header class="full-width NavBarP">
+		<div class="full-width NavBarP-Logo">S e n s o  -  J i t o</div>
+		<nav class="full-width NavBarP-Nav">
+			<ul class="full-width list-unstyled">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="historial.html">Historial</a></li>
+			</ul>
+		</nav>
+		<i class="fa fa-bars visible-xs btn-menuMobile ShowMenuMobile" aria-hidden="true"></i>
+	</header>
+
+	<section class="banner">
+		<div class="banner-content">
+			<h1>TEMPERATURA:   <span id="tem"></span></h1>
+			<br>
+			<h1>HUMEDAD:   <span id="hum"></span></h1>
+			<h2>Estado: </h2>
+			<p id="mensaje"></p>
+			<br>
+			<a href="historial.html">Historial</a>
+		</div>
+	</section>
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
